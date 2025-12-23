@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow High: The Endless Night</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/",
+                "cannon-es": "https://unpkg.com/cannon-es@0.20.0/dist/cannon-es.js"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="ui-container">
+        <div id="crosshair"></div>
+        <div id="instructions">
+            <p style="font-size:36px">Click to Play</p>
+            <p>WASD to Move | Mouse to Look | SHIFT to Run</p>
+        </div>
+        <div id="sanity-meter">Sanity: 100%</div>
+        <div id="battery-indicator">Battery: 100%</div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
